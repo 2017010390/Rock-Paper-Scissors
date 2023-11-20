@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap');
+
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-yellow: #fac650;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--header);
+}
+.title {
+    font-size: 32px;
+    color: var(--primary-yellow);
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* MAIN */
+.main {
+    margin-top: 40px;
+    text-align: center;
+}
+.gameboard {
+    margin-bottom: 15px;
+}
+.game-result {
+    font-size: 32px;
+}
+.game-detail {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.play-box {
+    width: 170px;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+button {
+    border-radius: 10px;
+    background-color: var(--secondary-dark);
+    width: 160px;
+    height: 160px;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: var(--secondary-dark-hover);
+}
+button:active {
+    background-color: var(--secondary-dark-active);
+}
